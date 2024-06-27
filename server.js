@@ -1,18 +1,17 @@
-const express = require ("express")
-const app = express()
-const port = process.env.PORT || 3030 
+const express = require ("express");
+const app = express();
+const port = process.env.PORT || 3030;
 
 
 //const productosRouter = require("./routes/productosRouter.js")
 //const db = require ("./data/db.js")
 
-app.use (express.json()) 
-
+//app.use (express.json()) 
 
 
 app.get ("/",(req,res)=>{
-    res.send("estas en el home")
-})
+    res.send("estas en el home");
+});
 
 //app.use ("/productos",productosRouter)
 
@@ -31,4 +30,4 @@ const conexiondb = async ()=>{
 app.listen(port,()=>{
     //conexiondb()
     console.log(`Server ok en el puerto ${port}`);
-})
+});
