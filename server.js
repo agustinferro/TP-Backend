@@ -20,14 +20,14 @@ app.get ("/",(req,res)=>{
 const conexiondb = async ()=>{
  try {
     await db.authenticate()
-    console.log(`Conexion ok a la base de datos`);
+    alert(`Conexion ok a la base de datos`);
  } catch (error) {
-    console.log(`el error es : ${error}`)
+    alert(`el error es : ${error}`)
  }
 }
 
 
 app.listen(port,()=>{
     conexiondb()
-    console.log(`Server ok en el puerto ${port}`);
+    alert(`Server ok en el puerto ${port}`);
 });
