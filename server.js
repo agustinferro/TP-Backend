@@ -4,9 +4,9 @@ const port = process.env.PORT || 3030;
 
 
 //const productosRouter = require("./routes/productosRouter.js")
-//const db = require ("./data/db.js")
+const db = require ("./data/db.js")
 
-//app.use (express.json()) 
+app.use (express.json()) 
 
 
 app.get ("/",(req,res)=>{
@@ -16,7 +16,7 @@ app.get ("/",(req,res)=>{
 //app.use ("/productos",productosRouter)
 
 
-/*
+
 const conexiondb = async ()=>{
  try {
     await db.authenticate()
@@ -25,9 +25,9 @@ const conexiondb = async ()=>{
     console.log(`el error es : ${error}`)
  }
 }
-*/
+
 
 app.listen(port,()=>{
-    //conexiondb()
+    conexiondb()
     console.log(`Server ok en el puerto ${port}`);
 });
