@@ -3,6 +3,8 @@ const express = require ("express");
 const app = express();
 const port = process.env.PORT || 3030;
 
+const user = process.env.DB_USER;
+const pass = process.env.DB_PASS;
 
 const productosRouter = require("./routes/router.js");
 
