@@ -3,11 +3,13 @@ const db = require ("../data/db.js")
 const {DataTypes} = require ("sequelize")
 
 const model = db.define ("productos",{
-    producto:{type:DataTypes.STRING},
-    categoria:{type:DataTypes.STRING},
+    sku:{type:DataTypes.INT},
+    categoria:{type:DataTypes.TEXT},
+    producto:{type:DataTypes.TEXT},
     precio: {type:DataTypes.FLOAT},
     puntaje:{type:DataTypes.INTEGER},
-    descripcion:{type:DataTypes.STRING},
+    puntaje:{type:DataTypes.INTEGER},
+    
 })
 
 module.exports = model 
