@@ -1,10 +1,6 @@
 const model = require ("../models/model.js")
 
-/* CRUD
-CREATE - READ - UPDATE - DELETE */
 
-/* FUNCION QUE TRAE TODOS LOS POSTEOS
-READ - GET */
 
 const traerProductos = async (req,res) =>{
     try {
@@ -15,8 +11,7 @@ const productos = await  model.findAll()
     }
 }
 
-/* FUNCION QUE TRAE UN POSTEO
-READ - GET */
+
 const traerUnProducto = async (req,res) =>{
  try {
     const productos = await model.findByPk(req.params.id)
@@ -25,9 +20,6 @@ const traerUnProducto = async (req,res) =>{
     res.json({message:error.message})
  }
     }
-
- /*    FUNCION QUE CREA UN REGISTRO
-    CREATE - POST */
 
     const crearProducto = async (req,res) =>{
         try {
@@ -40,8 +32,7 @@ const traerUnProducto = async (req,res) =>{
         }
     }
 
-/*     FUNCION QUE ACTUALIZAR UN REGISTRO
-    UPDATE - PUT */
+
 
     const actualizarProducto = async (req,res)=>{
         try {
