@@ -12,14 +12,13 @@ app.use (express.json());
 
 
 app.get ("/",(req,res)=>{
-    res.send(`
-        - GET Todos los registros: grupo1-24127.alwaysdata.net/productos/\n
-        - GET 1 Registro: grupo1-24127.alwaysdata.net/productos/id}\n
-        - POST: grupo1-24127.alwaysdata.net/productos/\n
-        - DELETE: grupo1-24127.alwaysdata.net/productos/id\n
-        - PUT: grupo1-24127.alwaysdata.net/productos/id\n
-        Formato de JSON para POST/PUT : \n
-        {"categoria":"prueba11","producto":"prueba11","precio":1000.99,"puntaje":4,"stock":600}`);
+    res.send(`<p>- GET Todos los registros: grupo1-24127.alwaysdata.net/productos/</p>
+        <p>- GET 1 Registro: grupo1-24127.alwaysdata.net/productos/id}</p>
+        <p>- POST: grupo1-24127.alwaysdata.net/productos/</p>
+        <p>- DELETE: grupo1-24127.alwaysdata.net/productos/id</p>
+        <p>- PUT: grupo1-24127.alwaysdata.net/productos/id</p>
+        <p>Formato de JSON para POST/PUT : </p>
+        <p>{"categoria":"prueba11","producto":"prueba11","precio":1000.99,"puntaje":4,"stock":600}</p>`);
 });
 
 app.use ("/productos",productosRouter);
