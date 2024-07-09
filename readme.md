@@ -4,7 +4,7 @@ Integrantes
 - Magali Escobar
 - Alejandro Javier Bernal
 - Agustin Ferro
-
+---
 
 - GET Todos los registros: grupo1-24127.alwaysdata.net/productos/
 - GET 1 Registro: grupo1-24127.alwaysdata.net/productos/id
